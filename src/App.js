@@ -17,7 +17,7 @@ function App() {
       <Provider store={store}>
         <BrowserRouter>
         <Routes>
-          <Route path="" element={<Home />}>
+          <Route path="todoapp" element={<Home />}>
             
           </Route>
           <Route path="todo"
@@ -45,7 +45,10 @@ function App() {
         </Routes>
        
         </BrowserRouter>
-      </Provider>
+      </Provider> 
+      {/* <h1>Notes</h1>
+      <NoteForm  />
+        <NoteList />*/}
     </div>
   );
 }
