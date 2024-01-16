@@ -20,7 +20,7 @@ function App() {
           <Route path="todoapp" element={<Home />}>
             
           </Route>
-          <Route path="todo"
+          <Route path="todoapp/todo"
           element={
             <Fragment>             
              <h1>To Dos</h1>
