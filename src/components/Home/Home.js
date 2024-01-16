@@ -1,9 +1,9 @@
 
-import { fetchTodos } from "../../redux/reducers/todoReducer";
+// import { fetchTodos } from "../../redux/reducers/todoReducer";
 import styles from "./Home.module.css";
-import { useDispatch } from "react-redux";
+// import { useDispatch } from "react-redux";
 function Home(){
-    const dispatch = useDispatch();
+    // const dispatch = useDispatch();
     return(
         <div className={styles.container}>
             <a href="todo"  className={"btn btn-warning "+styles.link}>

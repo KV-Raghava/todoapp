@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 // import {addTodo} from "../../redux/actions/todoActions";
-import { actions, postAdd } from "../../redux/reducers/todoReducer";
+import { postAdd } from "../../redux/reducers/todoReducer";
 
 import styles from "./ToDoForm.module.css";
 import { notificationSelector, resetNotification } from "../../redux/reducers/notificationReducer";
@@ -22,7 +22,7 @@ function ToDoForm() {
     
     // console.log("[LOG]: Todo - Add Action dispatched");
     // dispatch(actions.add(todoText));
-    dispatch(postAdd({id: todos.size()+1,
+    dispatch(postAdd({id: todos.length+5,
       title: todoText,
       body: 'bar',
       userId: 1,}));

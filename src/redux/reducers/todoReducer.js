@@ -27,7 +27,8 @@ export const fetchTodos = createAsyncThunk('todo/fetchTodos', async () => {
         'Content-type': 'application/json; charset=UTF-8',
       },
     });
-    return response.data;
+    // return response.data;
+    return postData;
     } catch (error) {
       throw error;
     }
@@ -69,7 +70,7 @@ const todoSlice = createSlice({
         },
         toggle:(state, action)=>{
             state.todos.map((todo, i)=>{
-                if(i==action.payload){
+                if(i===action.payload){
                     todo.completed=!todo.completed;
                 }
                 return todo;
