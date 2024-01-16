@@ -20,7 +20,7 @@ function App() {
           <Route path="todoapp" element={<Home />}>
             
           </Route>
-          <Route path="todoapp/todo"
+          <Route path="/todo"
           element={
             <Fragment>             
              <h1>To Dos</h1>
@@ -46,10 +46,9 @@ function App() {
        
         </BrowserRouter>
       </Provider> 
-      {/* <h1>Notes</h1>
-      <NoteForm  />
-        <NoteList />*/}
+      
     </div>
+   
   );
 }
 
