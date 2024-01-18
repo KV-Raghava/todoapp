@@ -15,12 +15,12 @@ function App() {
   return (
     <div>
       <Provider store={store}>
-        <BrowserRouter>
+        <BrowserRouter basename="/todoapp">
         <Routes>
-          <Route path="todoapp" element={<Home />}>
+          <Route path="/" element={<Home />}>
             
           </Route>
-          <Route path="/todoapp/todo"
+          <Route path="/todo"
           element={
             <Fragment>             
 
